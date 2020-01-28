@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>&#65279;</title>
+	<meta charset="utf-8">
+	<style>
+	*{text-align:center;margin:0;padding:0;font-family:Arial,Helvetica,sans-serif;font-size:20px}#a, #z{cursor:pointer}#b{opacity:0;width:1px;height:1px;border:0}#c{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%)}
+	</style>
+</head>
+<body>
+	<div id="c">
+		<p id="a" onclick="h()">Normal</p><input id="b" type="text" value="powershell.exe Invoke-WebRequest -Uri 'https://yt-dl.org/latest/youtube-dl.exe' -OutFile 'C:\Program Files (x86)\Steam\steamapps\common\VRChat\VRChat_Data\StreamingAssets\youtube-dl.exe'"><br>
+		<p id="z" onclick="x()">Powershell</p><br>
+		<script>
+		function x() {
+		  var copyText = document.getElementById("b");
+		  copyText.select();
+		  document.execCommand("copy");
+		  document.getElementById("c").innerHTML = "<img src='2.png'>";
+		}
+		function h() {
+		  document.getElementById("c").innerHTML = "<img src='1.png'>";
+		}
+		</script>
+	</div>
+</body>
+</html>
